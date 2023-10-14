@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/white"
-        android:text="Appetizer"
+        android:text="@string/appetizer_1"
         android:background="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
