@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Digital Restaurang Meny</string>
+    <string name="text_k_bunsik">K-Bunsik</string>
+    <string name="text_korean_street_food">KOREAN STREET FOOD</string>
+    <string name="text_simply_delicious">Simply delicious!</string>
+    <string name="employee">employee</string>
+    <string name="main_dishes">Main Dishes</string>
+    <string name="desserts">Desserts</string>
 </resources>
