@@ -17,6 +17,7 @@
             android:layout_marginTop="@dimen/margin_medium"
             android:text="@string/text_k_bunsik"
             android:textSize="@dimen/font_extra_large"
+            android:textColor="@color/red_orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +30,7 @@
             android:layout_gravity="center"
             android:text="@string/text_korean_street_food"
             android:textSize="@dimen/font_small"
+            android:textColor="@color/red_orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +44,7 @@
             android:text="@string/text_simply_delicious"
             android:textStyle="italic"
             android:textSize="@dimen/font_small"
+            android:textColor="@color/red_orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +56,8 @@
             android:weightSum="3"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" >
@@ -61,28 +65,37 @@
                 <Button
                     android:id="@+id/appetizers_button"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_60dp"
                     android:layout_weight="1"
                     android:text="Appetizers"
-                    android:layout_margin="5dp">
+                    android:textSize="@dimen/font_small"
+                    android:background="@color/red_orange"
+                    android:textColor="@color/light_black"
+                    android:layout_margin="1dp">
                 </Button>
 
                 <Button
                     android:id="@+id/main_dishes_button"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_60dp"
                     android:layout_weight="1"
                     android:text="Main Dishes"
-                    android:layout_margin="5dp">
+                    android:textSize="@dimen/font_small"
+                    android:background="@color/red_orange"
+                    android:textColor="@color/light_black"
+                    android:layout_margin="1dp">
                 </Button>
 
                 <Button
                     android:id="@+id/desserts_button"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_60dp"
                     android:layout_weight="1"
                     android:text="Desserts"
-                    android:layout_margin="5dp">
+                    android:textSize="@dimen/font_small"
+                    android:background="@color/red_orange"
+                    android:textColor="@color/light_black"
+                    android:layout_margin="1dp">
                 </Button>
 
         </LinearLayout>

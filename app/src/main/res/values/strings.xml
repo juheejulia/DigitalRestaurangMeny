@@ -4,13 +4,19 @@
     <string name="text_korean_street_food">KOREAN STREET FOOD</string>
     <string name="text_simply_delicious">Simply delicious!</string>
     <string name="employee">employee</string>
-    <string name="main_dishes_1">Main Dishes 1</string>
-    <string name="main_dishes_2">Main Dishes 2</string>
-    <string name="main_dishes_3">Main Dishes 3</string>
+    <string name="main_dishes_1">Bibimbab\n129kr</string>
+    <string name="main_dishes_2">Pumpa soppa\n59kr</string>
+    <string name="main_dishes_3">Patbingsu\n69kr</string>
     <string name="desserts_1">Desserts 1</string>
     <string name="desserts_2">Desserts 2</string>
     <string name="desserts_3">Desserts 3</string>
     <string name="appetizer_1">Appetizer 1</string>
     <string name="appetizer_2">Appetizer 2</string>
     <string name="appetizer_3">Appetizer 3</string>
+    <string name="bulgogi">Bulgogi</string>
+    <string name="samgyeopsal">Samgyeopsal</string>
+    <string name="bibimbab">Bibimbab</string>
+    <string name="appetizers_1">appetizers_1</string>
+    <string name="appetizers_2">appetizers_2</string>
+    <string name="appetizers_3">appetizers_3</string>
 </resources>

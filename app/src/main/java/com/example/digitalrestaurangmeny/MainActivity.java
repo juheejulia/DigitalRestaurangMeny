@@ -1,22 +1,17 @@
 package com.example.digitalrestaurangmeny;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
-    TextView appetizerTextView, mainDishesTextView, dessertsTextView;
     Button appetizersButton, mainDishesButton, dessertsButton;
 
 
@@ -28,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout mainLayout = findViewById(R.id.main_linear_layout);
         LayoutInflater inflate = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        ConstraintLayout appetizersLayout = (ConstraintLayout) inflate.inflate(
+        RelativeLayout appetizersLayout = (RelativeLayout) inflate.inflate(
                 R.layout.appetizers_layout, null);
-        ConstraintLayout mainDishesLayout = (ConstraintLayout) inflate.inflate(
+        RelativeLayout mainDishesLayout = (RelativeLayout) inflate.inflate(
                 R.layout.main_dishes_layout, null);
-        ConstraintLayout dessertsLayout = (ConstraintLayout) inflate.inflate(
+        RelativeLayout dessertsLayout = (RelativeLayout) inflate.inflate(
                 R.layout.desserts_layout, null);
 
         mainLayout.addView(appetizersLayout);
