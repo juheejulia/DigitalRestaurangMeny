@@ -5,107 +5,174 @@
     android:layout_height="match_parent"
     android:layout_marginTop="@dimen/margin_extra_large">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/main_dish_card_view_1"
+    <!-- first main dish -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_dishes_card_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_extra_small">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_extra_small">
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bibimbab_picture_1"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_150dp"
+                android:src="@drawable/bibimbap"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/bibimbab" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/bibimbab_picture"
-                    android:layout_width="@dimen/_200dp"
-                    android:layout_height="@dimen/_150dp"
-                    android:src="@drawable/bibimbap"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/bibimbab" />
-
+                <!-- title text -->
                 <TextView
-                    android:id="@+id/main_dishes_text_view_1"
+                    android:id="@+id/main_dishes_title_text_view_1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="@dimen/margin_large"
                     android:background="@color/light_black_2"
-                    android:padding="@dimen/margin_small"
-                    android:text="@string/main_dishes_1"
+                    android:padding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:text="@string/bibimbab"
                     android:textStyle="bold"
                     android:textSize="@dimen/font_medium"
                     android:textColor="@color/red_orange">
                 </TextView>
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/main_dish_card_view_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/main_dish_card_view_1"
-            android:layout_margin="@dimen/margin_extra_small">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/bulgogi_picture"
-                    android:layout_width="@dimen/_200dp"
-                    android:layout_height="@dimen/_150dp"
-                    android:src="@drawable/bibimbap"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/bulgogi"/>
-
+                <!-- description text -->
                 <TextView
-                    android:id="@+id/main_dishes_text_view_2"
+                    android:id="@+id/main_dishes_description_text_view_1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="@dimen/_90dp"
                     android:background="@color/light_black_2"
-                    android:padding="@dimen/margin_small"
-                    android:text="@string/main_dishes_2"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/font_medium"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/bibimbab_description"
+                    android:textSize="@dimen/_14sp"
                     android:textColor="@color/red_orange">
                 </TextView>
-
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/main_dish_card_view_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/main_dish_card_view_2"
-            android:layout_margin="@dimen/margin_extra_small">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/samgyeopsal_picture"
-                    android:layout_width="@dimen/_200dp"
-                    android:layout_height="@dimen/_150dp"
-                    android:src="@drawable/bibimbap"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/samgyeopsal"/>
-
-                <TextView
-                    android:id="@+id/main_dishes_text_view_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/light_black_2"
-                    android:padding="@dimen/margin_small"
-                    android:text="@string/main_dishes_3"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/font_medium"
-                    android:textColor="@color/red_orange">
-            </TextView>
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <!-- second main dish -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_dishes_card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_dishes_card_view_1"
+        android:layout_margin="@dimen/margin_extra_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bibimbab_picture_2"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_150dp"
+                android:src="@drawable/bibimbap"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/bibimbab" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- title text -->
+                <TextView
+                    android:id="@+id/main_dishes_title_text_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_large"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:text="@string/bibimbab"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/red_orange">
+                </TextView>
+
+                <!-- description text -->
+                <TextView
+                    android:id="@+id/main_dishes_description_text_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90dp"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/bibimbab_description"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/red_orange">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- third main dish -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_dishes_card_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_dishes_card_view_2"
+        android:layout_margin="@dimen/margin_extra_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bibimbab_picture_3"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_150dp"
+                android:src="@drawable/bibimbap"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/bibimbab" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- title text -->
+                <TextView
+                    android:id="@+id/main_dishes_title_text_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_large"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:text="@string/bibimbab"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/red_orange">
+                </TextView>
+
+                <!-- description text -->
+                <TextView
+                    android:id="@+id/main_dishes_description_text_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90dp"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/bibimbab_description"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/red_orange">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

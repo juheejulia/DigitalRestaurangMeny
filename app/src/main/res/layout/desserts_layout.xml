@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="@dimen/margin_extra_large">
 
+    <!-- first dessert -->
     <androidx.cardview.widget.CardView
         android:id="@+id/desserts_card_view_1"
         android:layout_width="match_parent"
@@ -17,28 +18,50 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/bibimbab_picture"
-                android:layout_width="@dimen/_200dp"
+                android:id="@+id/patbingsu_picture_1"
+                android:layout_width="@dimen/_150dp"
                 android:layout_height="@dimen/_150dp"
-                android:src="@drawable/bibimbap"
+                android:src="@drawable/patbingsu"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/bibimbab" />
+                android:contentDescription="@string/patbingsu" />
 
-            <TextView
-                android:id="@+id/appetizers_text_view_1"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/light_black_2"
-                android:padding="@dimen/margin_small"
-                android:text="@string/desserts_1"
-                android:textStyle="bold"
-                android:textSize="@dimen/font_medium"
-                android:textColor="@color/red_orange">
-            </TextView>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <!-- title text -->
+                <TextView
+                    android:id="@+id/desserts_title_text_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_large"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:text="@string/patbingsu"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/red_orange">
+                </TextView>
+
+                <!-- description text -->
+                <TextView
+                    android:id="@+id/desserts_description_text_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90dp"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/patbingsu_description"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/red_orange">
+                </TextView>
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- second dessert -->
     <androidx.cardview.widget.CardView
         android:id="@+id/desserts_card_view_2"
         android:layout_width="match_parent"
@@ -52,28 +75,50 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/bulgogi_picture"
-                android:layout_width="@dimen/_200dp"
+                android:id="@+id/patbingsu_picture_2"
+                android:layout_width="@dimen/_150dp"
                 android:layout_height="@dimen/_150dp"
-                android:src="@drawable/pumpasoppa"
+                android:src="@drawable/patbingsu"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/bulgogi"/>
+                android:contentDescription="@string/patbingsu" />
 
-            <TextView
-                android:id="@+id/desserts_text_view_2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/light_black_2"
-                android:padding="@dimen/margin_small"
-                android:text="@string/desserts_2"
-                android:textStyle="bold"
-                android:textSize="@dimen/font_medium"
-                android:textColor="@color/red_orange">
-            </TextView>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <!-- title text -->
+                <TextView
+                    android:id="@+id/desserts_title_text_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_large"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:text="@string/patbingsu"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/red_orange">
+                </TextView>
+
+                <!-- description text -->
+                <TextView
+                    android:id="@+id/desserts_description_text_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90dp"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/patbingsu_description"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/red_orange">
+                </TextView>
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- third dessert -->
     <androidx.cardview.widget.CardView
         android:id="@+id/desserts_card_view_3"
         android:layout_width="match_parent"
@@ -87,25 +132,47 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/samgyeopsal_picture"
-                android:layout_width="@dimen/_200dp"
+                android:id="@+id/patbingsu_picture_3"
+                android:layout_width="@dimen/_150dp"
                 android:layout_height="@dimen/_150dp"
                 android:src="@drawable/patbingsu"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/samgyeopsal"/>
+                android:contentDescription="@string/patbingsu" />
 
-            <TextView
-                android:id="@+id/desserts_text_view_3"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/light_black_2"
-                android:padding="@dimen/margin_small"
-                android:text="@string/desserts_3"
-                android:textStyle="bold"
-                android:textSize="@dimen/font_medium"
-                android:textColor="@color/red_orange">
-            </TextView>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <!-- title text -->
+                <TextView
+                    android:id="@+id/desserts_title_text_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_large"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:text="@string/patbingsu"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/red_orange">
+                </TextView>
+
+                <!-- description text -->
+                <TextView
+                    android:id="@+id/desserts_description_text_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90dp"
+                    android:background="@color/light_black_2"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_30dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/patbingsu_description"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/red_orange">
+                </TextView>
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </RelativeLayout>
