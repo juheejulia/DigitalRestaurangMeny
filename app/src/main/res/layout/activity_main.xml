@@ -99,4 +99,17 @@
                 </Button>
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:text="Welcome to K-Bunsik!"
+            android:textColor="@color/red_orange"
+            android:gravity="center"
+            android:textSize="30sp"
+
+            >
+
+        </TextView>
 </LinearLayout>
